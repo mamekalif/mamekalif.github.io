@@ -4,181 +4,482 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional portfolio of Mohammed Kalif Umar — Humanitarian Field Data, Research, Livestock Development and Afaan Oromoo AI.">
+<meta name="description" content="Professional portfolio of Mohammed Kalif Umar — Humanitarian Programmes, Livestock Operations, MEAL, Research, Field Data and Afaan Oromoo AI.">
 <title>Mohammed Kalif Umar | Professional Portfolio</title>
+
 <style>
 :root {
-  --teal:#164C56;
-  --amber:#BE7037;
-  --cream:#F7F8F6;
-  --ink:#263238;
+  --teal: #164c56;
+  --dark: #102f36;
+  --amber: #be7037;
+  --light: #f7f8f6;
+  --white: #ffffff;
+  --text: #263238;
+  --muted: #64747a;
+  --border: #e1e8e6;
 }
-* {box-sizing:border-box;scroll-behavior:smooth}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-  margin:0;font-family:Arial,sans-serif;
-  background:var(--cream);color:var(--ink);line-height:1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.7;
 }
+
 header {
-  background:var(--teal);color:white;padding:20px 7%;
-  display:flex;justify-content:space-between;align-items:center;
-  flex-wrap:wrap;gap:12px;
+  background: var(--dark);
+  color: white;
+  padding: 16px 7%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-header strong {font-size:19px}
-nav {display:flex;flex-wrap:wrap;gap:15px}
-nav a {color:white;text-decoration:none;font-size:14px}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 8px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #f2bd85;
+}
+
 .hero {
-  background:var(--teal);color:white;text-align:center;
-  padding:85px 8% 95px;
+  background: linear-gradient(120deg, #102f36, #21616a);
+  color: white;
+  padding: 90px 8%;
 }
-.hero .tag {color:#F4C18E;letter-spacing:2px;font-size:13px}
-.hero h1 {font-size:clamp(32px,6vw,52px);line-height:1.2;margin:15px auto}
-.hero p {max-width:750px;margin:18px auto;color:#E7EEEE}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 55px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  color: #f2bd85;
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 17px;
+  max-width: 720px;
+  margin-bottom: 25px;
+}
+
 .btn {
-  display:inline-block;background:var(--amber);color:white;
-  padding:12px 22px;border-radius:5px;text-decoration:none;
-  margin:10px 6px;font-weight:bold;
+  display: inline-block;
+  background: var(--amber);
+  color: white;
+  padding: 12px 21px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 8px 5px 0;
 }
-section {padding:65px 8%;max-width:1150px;margin:auto}
-h2 {color:var(--teal);font-size:29px}
-.line {width:55px;height:4px;background:var(--amber);margin:12px 0 25px}
-.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+
+.btn:hover {
+  background: #a95d2a;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
+
+section {
+  padding: 65px 8%;
+  scroll-margin-top: 75px;
+}
+
+.section-title {
+  color: var(--teal);
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.about {
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
 .card {
-  background:white;padding:24px;border-radius:9px;
-  border-top:4px solid var(--amber);
-  box-shadow:0 3px 14px #26323812;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.035);
 }
-.card h3 {color:var(--teal);margin-top:0}
-.muted {color:#5E6B70}
-.skills {display:flex;flex-wrap:wrap;gap:10px}
-.skills span {
-  background:#E4ECEB;color:var(--teal);padding:8px 13px;
-  border-radius:20px;font-size:14px
+
+.card h3 {
+  color: var(--teal);
+  margin-bottom: 12px;
 }
-.alt {background:#EDF1EF}
-footer {background:var(--teal);color:white;text-align:center;padding:30px 15px}
-footer a {color:#F4C18E}
-@media(max-width:600px) {
-  header {display:block}
-  nav {margin-top:12px;gap:10px}
-  section {padding:45px 6%}
+
+.card p {
+  color: var(--muted);
+}
+
+.skills {
+  background: #eef3f1;
+}
+
+.skill {
+  display: inline-block;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 8px 13px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.experience {
+  background: white;
+}
+
+.job {
+  border-left: 4px solid var(--amber);
+  padding: 5px 0 22px 22px;
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  color: var(--teal);
+}
+
+.job small {
+  color: var(--muted);
+}
+
+.downloads {
+  background: #eef3f1;
+}
+
+.download-card {
+  background: white;
+  padding: 22px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.download-card h3 {
+  color: var(--teal);
+  margin-bottom: 10px;
+}
+
+.download-card ul {
+  padding-left: 20px;
+}
+
+.download-card li {
+  margin: 9px 0;
+}
+
+.download-card a {
+  color: #176b79;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-card a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  background: var(--dark);
+  color: white;
+}
+
+.contact .section-title {
+  color: white;
+}
+
+.contact a {
+  color: #f2bd85;
+  text-decoration: none;
+}
+
+footer {
+  background: #0b2228;
+  color: #cbd5d6;
+  text-align: center;
+  padding: 22px;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav div:last-child {
+    text-align: center;
+  }
+
+  .hero {
+    padding: 65px 7%;
+  }
+
+  section {
+    padding: 48px 7%;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <strong>Mohammed Kalif Umar</strong>
-  <nav>
+<nav>
+  <div class="logo">MOHAMMED KALIF UMAR</div>
+  <div>
     <a href="#about">About</a>
-    <a href="#humanitarian">Humanitarian & MEAL</a>
-    <a href="#research">Research</a>
-    <a href="#ai">Afaan Oromoo AI</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Experience</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
-  </nav>
+  </div>
+</nav>
 </header>
 
 <div class="hero">
-  <div class="tag">HUMANITARIAN • RESEARCH • TECHNOLOGY</div>
-  <h1>Mohammed Kalif Umar, DVM</h1>
-  <p>Humanitarian Field Data | Research Support | Livestock Development | Afaan Oromoo AI & Linguistic Data</p>
-  <p>Combining field experience, digital data and community knowledge to support evidence-based development.</p>
-  <a class="btn" href="#about">Explore My Portfolio</a>
-  <a class="btn" href="#contact">Contact Me</a>
+<div class="hero-content">
+  <h2>PROFESSIONAL PORTFOLIO</h2>
+  <h1>Mohammed Kalif Umar</h1>
+  <h2>Doctor of Veterinary Medicine | Humanitarian & Field Operations Professional</h2>
+  <p>
+    Connecting humanitarian action, livestock development, research,
+    field data management and Afaan Oromoo language technology.
+    I bring more than a decade of experience supporting field operations,
+    pastoralist communities, veterinary services and programme delivery.
+  </p>
+  <a href="#portfolio" class="btn">Explore My Portfolio</a>
+  <a href="#contact" class="btn btn-outline">Contact Me</a>
+</div>
 </div>
 
-<section id="about">
-  <h2>About Me</h2><div class="line"></div>
-  <p>I am a Doctor of Veterinary Medicine with more than 10 years of professional experience in livestock and animal-health programmes, pastoralist field operations, veterinary supply chains, disease surveillance, community engagement and operational reporting.</p>
-  <p>My professional interests combine humanitarian programme implementation, monitoring and evaluation, research support, digital data collection, information management and Afaan Oromoo language technology.</p>
-  <p>I hold a DVM degree from Addis Ababa University (2014). I work across multidisciplinary environments and communicate in Afaan Oromoo, Amharic, Somali and English.</p>
+<section class="about" id="about">
+<h2 class="section-title">About Me</h2>
+<p class="section-intro">
+I am a Doctor of Veterinary Medicine with professional experience
+in livestock programme operations, veterinary service delivery,
+pastoralist field coordination, supply chain management,
+community engagement and field data collection.
+</p>
+<p>
+My professional interests extend to humanitarian programmes,
+Monitoring, Evaluation, Accountability and Learning (MEAL),
+research support, digital data collection and artificial intelligence
+language development. I am particularly interested in using
+technology and evidence-based approaches to improve services
+for underserved and pastoralist communities.
+</p>
 </section>
 
-<section class="alt" id="humanitarian">
-  <h2>Humanitarian & MEAL</h2><div class="line"></div>
-  <p>Field operations, digital data collection, monitoring support and programme reporting.</p>
-  <div class="cards">
-    <div class="card">
-      <h3>KoboToolbox Household Assessment</h3>
-      <p class="muted">A sample XLSForm assessment covering household characteristics, livelihoods, livestock and water access.</p>
-      <p><strong>Tools:</strong> KoboToolbox, XLSForm and Excel</p>
-    </div>
-    <div class="card">
-      <h3>MEAL Data Dashboard</h3>
-      <p class="muted">A demonstration workbook for organising assessment data, summarising indicators and supporting reporting.</p>
-      <p><strong>Tools:</strong> Microsoft Excel and formulas</p>
-    </div>
-    <div class="card">
-      <h3>Assessment Report</h3>
-      <p class="muted">A concise example of transforming structured assessment data into a clear report.</p>
-      <p><strong>Output:</strong> Simulated assessment report</p>
-    </div>
-  </div>
-  <p><strong>Data note:</strong> These demonstration projects use simulated data and do not represent actual community assessment findings.</p>
+<section id="expertise">
+<h2 class="section-title">Professional Expertise</h2>
+<p class="section-intro">My work brings together field experience, technical knowledge and digital skills.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Humanitarian & MEAL</h3>
+<p>Field operations, programme coordination, community engagement,
+monitoring support, data quality, operational reporting and accountability.</p>
+</div>
+
+<div class="card">
+<h3>Livestock & Veterinary Services</h3>
+<p>Animal health programmes, vaccination operations, disease surveillance,
+veterinary input supply chains and pastoralist livestock development.</p>
+</div>
+
+<div class="card">
+<h3>Research & Field Data</h3>
+<p>Digital data collection, KoboToolbox, field assessments,
+information management, data validation and research support.</p>
+</div>
+
+<div class="card">
+<h3>Afaan Oromoo AI & Language Technology</h3>
+<p>Audio contribution and validation, linguistic annotation,
+language data activities and support for Afaan Oromoo digital resources.</p>
+</div>
+</div>
 </section>
 
-<section id="research">
-  <h2>Research & Field Data</h2><div class="line"></div>
-  <p>My field experience includes livestock programme activities, vaccination data collection, animal-health services, disease surveillance, community engagement and operational coordination.</p>
-  <div class="cards">
-    <div class="card">
-      <h3>Field Assessments</h3>
-      <p>Structured data collection and community-level information gathering.</p>
-    </div>
-    <div class="card">
-      <h3>Livestock Programmes</h3>
-      <p>Veterinary services, livestock input supply, vaccination and field operations.</p>
-    </div>
-    <div class="card">
-      <h3>Data Management</h3>
-      <p>Data organisation, quality checks, summary indicators and reporting.</p>
-    </div>
-  </div>
+<section class="experience" id="experience">
+<h2 class="section-title">Professional Experience</h2>
+<p class="section-intro">Selected professional roles and responsibilities.</p>
+
+<div class="job">
+<h3>Animal Vaccination Data Collector</h3>
+<small>GOAL Ethiopia / FAO-funded project | 2026</small>
+<p>Supported vaccination data collection and digital field information activities using KoboToolbox.</p>
+</div>
+
+<div class="job">
+<h3>Livestock Input Supply and Operations Manager</h3>
+<small>Babile Woreda Agricultural Office | 2019–Present</small>
+<p>Supported livestock input supply, operational coordination and veterinary service delivery.</p>
+</div>
+
+<div class="job">
+<h3>Veterinary Supply Chain and Field Coordinator</h3>
+<small>Haramaya Farm Service Center | 2018–2019</small>
+<p>Coordinated veterinary input distribution, field activities and operational support.</p>
+</div>
+
+<div class="job">
+<h3>Operational and Cross-Departmental Coordinator</h3>
+<small>Babile Administrative City | 2017–2018</small>
+<p>Supported coordination across departments and administrative operations.</p>
+</div>
+
+<div class="job">
+<h3>Field Operations and Animal Health Coordinator</h3>
+<small>Gola Oda Pastoralist Woreda | 2014–2017</small>
+<p>Supported animal health activities, pastoralist community engagement and field coordination.</p>
+</div>
+
+<div class="job">
+<h3>Clinical Field Instructor and Capacity Builder</h3>
+<small>2011–2017</small>
+<p>Supported practical learning, field capacity building and animal health activities.</p>
+</div>
 </section>
 
-<section class="alt" id="ai">
-  <h2>Afaan Oromoo AI & Linguistic Data</h2><div class="line"></div>
-  <p>I have participated in Afaan Oromoo language technology activities, including audio contributions, validation, language improvement and linguistic data work through Google Crowdsource Vocalize 2.0 and related community activities.</p>
-  <div class="cards">
-    <div class="card">
-      <h3>Language Data</h3>
-      <p>Afaan Oromoo language contributions and linguistic data quality activities.</p>
-    </div>
-    <div class="card">
-      <h3>Audio Validation</h3>
-      <p>Experience with audio contribution and validation activities.</p>
-    </div>
-    <div class="card">
-      <h3>Annotation Demonstrations</h3>
-      <p>Sample synthetic annotation examples prepared to demonstrate possible language-data workflows.</p>
-    </div>
-  </div>
-  <p><strong>Note:</strong> Synthetic examples are demonstrations, not official project data or client work.</p>
+<section class="skills" id="skills">
+<h2 class="section-title">Technical Skills & Languages</h2>
+
+<h3>Technical Skills</h3>
+<div>
+<span class="skill">KoboToolbox</span>
+<span class="skill">Digital Data Collection</span>
+<span class="skill">MEAL Support</span>
+<span class="skill">Field Coordination</span>
+<span class="skill">Data Quality</span>
+<span class="skill">Operational Reporting</span>
+<span class="skill">Livestock Programmes</span>
+<span class="skill">Veterinary Supply Chains</span>
+<span class="skill">Disease Surveillance</span>
+<span class="skill">Research Support</span>
+<span class="skill">AI Linguistic Annotation</span>
+<span class="skill">Information Management</span>
+</div>
+
+<br><br>
+<h3>Languages</h3>
+<div>
+<span class="skill">Afaan Oromoo — Native</span>
+<span class="skill">Amharic — Fluent</span>
+<span class="skill">Somali — Fluent</span>
+<span class="skill">English — Professional</span>
+</div>
 </section>
 
-<section>
-  <h2>Skills & Languages</h2><div class="line"></div>
-  <div class="skills">
-    <span>KoboToolbox</span><span>Excel</span><span>Field Data Collection</span>
-    <span>MEAL Support</span><span>Information Management</span>
-    <span>Livestock Development</span><span>Animal Health</span>
-    <span>Research Support</span><span>Community Engagement</span>
-    <span>Afaan Oromoo</span><span>Data Quality</span>
-  </div>
-  <p><strong>Languages:</strong> Afaan Oromoo (Native), Amharic (Fluent), Somali (Fluent), English (Professional).</p>
+<section id="education">
+<h2 class="section-title">Education</h2>
+<div class="card">
+<h3>Doctor of Veterinary Medicine (DVM)</h3>
+<p>Addis Ababa University, Ethiopia | 2014</p>
+</div>
 </section>
 
-<section class="alt" id="contact">
-  <h2>Contact & Collaboration</h2><div class="line"></div>
-  <p>I welcome opportunities in humanitarian programmes, field research, MEAL, livestock development, digital data collection and Afaan Oromoo language technology.</p>
-  <p><strong>Email:</strong> <a href="mailto:mamekalif@gmail.com">mamekalif@gmail.com</a></p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/251913830630">+251 913 830 630</a></p>
-  <p><strong>Location:</strong> Oromia, Ethiopia</p>
+<section class="downloads" id="portfolio">
+<h2 class="section-title">CVs & Project Portfolio</h2>
+<p class="section-intro">
+Explore and download selected professional CVs, technical tools
+and portfolio documents.
+</p>
+
+<div class="download-card">
+<h3>Professional CVs</h3>
+<ul>
+<li><a href="CVs/Mohammed_Kalif_Umar_Humanitarian_MEAL_CV.pdf" target="_blank">Humanitarian & MEAL CV (PDF)</a></li>
+<li><a href="CVs/Mohammed_Kalif_Umar_Research_Field_Data_CV.pdf" target="_blank">Research & Field Data CV (PDF)</a></li>
+<li><a href="CVs/Mohammed_Kalif_Umar_AI_Linguistic_Data_CV.pdf" target="_blank">Afaan Oromoo AI & Linguistic Data CV (PDF)</a></li>
+</ul>
+</div>
+
+<div class="download-card">
+<h3>Humanitarian & MEAL Projects</h3>
+<ul>
+<li><a href="Humanitarian_MEAL/Babile_Household_Assessment_XLSForm_v2.xlsx">KoboToolbox Household Assessment XLSForm</a></li>
+<li><a href="Humanitarian_MEAL/Babile_MEAL_Data_Management_Dashboard_v2.xlsx">MEAL Data Management Dashboard</a></li>
+<li><a href="Humanitarian_MEAL/Babile_MEAL_Simulated_Assessment_Report_Concise.pdf">Simulated Assessment Report (PDF)</a></li>
+<li><a href="Humanitarian_MEAL/Kobo_XLSForm_Deployment_and_Testing_Guide.pdf">KoboToolbox Deployment & Testing Guide (PDF)</a></li>
+</ul>
+<p><small>Note: The assessment report and example data are simulated demonstration materials, not actual programme findings.</small></p>
+</div>
+
+<div class="download-card">
+<h3>Afaan Oromoo AI & Linguistic Data</h3>
+<ul>
+<li><a href="Afaan_Oromoo_AI/Afaan_Oromoo_AI_Annotation_Portfolio.pdf">Afaan Oromoo AI Annotation Portfolio (PDF)</a></li>
+<li><a href="Afaan_Oromoo_AI/Afaan_Oromoo_AI_Annotation_Portfolio_25_Synthetic_Examples.xlsx">25 Synthetic Annotation Examples (Excel)</a></li>
+</ul>
+<p><small>Note: The examples are synthetic demonstrations, not real client or production datasets.</small></p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title">Contact Me</h2>
+<p>I welcome opportunities in humanitarian programmes, livestock development,
+MEAL, research, field data collection and Afaan Oromoo language technology.</p>
+<br>
+<p><strong>Email:</strong> <a href="mailto:mamekalif@gmail.com">mamekalif@gmail.com</a></p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/251913830630" target="_blank">+251 913 830 630</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/mamekalif" target="_blank">github.com/mamekalif</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Mohammed Kalif Umar | Professional Portfolio</p>
-  <p>Humanitarian • Research • Technology</p>
+<p>© 2026 Mohammed Kalif Umar | Professional Portfolio</p>
+<p>Humanitarian Action • Research • Livestock Development • Language Technology</p>
 </footer>
+
 </body>
-  </html>
-        
+</html>
