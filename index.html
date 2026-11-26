@@ -4,269 +4,341 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional portfolio of Mohammed Kalif Umar — Humanitarian Programmes, Livestock Operations, MEAL, Research, Field Data and Afaan Oromoo AI.">
+<meta name="description" content="Mohammed Kalif Umar — Veterinary Medicine, Humanitarian Programmes, MEAL, Research, Field Data and Afaan Oromoo AI.">
 <title>Mohammed Kalif Umar | Professional Portfolio</title>
 
 <style>
 :root {
-  --teal: #164c56;
-  --dark: #102f36;
-  --amber: #be7037;
-  --light: #f7f8f6;
+  --teal: #073b43;
+  --teal2: #10545c;
+  --amber: #d58a25;
+  --cream: #f7f8f5;
   --white: #ffffff;
-  --text: #263238;
-  --muted: #64747a;
-  --border: #e1e8e6;
+  --text: #25363a;
+  --muted: #647477;
+  --border: #e1e8e5;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--light);
   color: var(--text);
+  background: var(--cream);
   line-height: 1.7;
 }
 
 header {
-  background: var(--dark);
+  background: var(--teal);
   color: white;
-  padding: 16px 7%;
+  padding: 14px 6%;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10;
+  border-bottom: 1px solid #45636a;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
   gap: 12px;
+  text-decoration: none;
+  color: white;
 }
 
 .logo {
-  font-size: 19px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--amber);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  color: white;
+}
+
+.brand strong { display: block; font-size: 15px; }
+.brand small { color: #f0b65e; }
+
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.navlinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
   font-weight: bold;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 5px 8px;
-  font-size: 13px;
-}
-
-nav a:hover {
-  color: #f2bd85;
-}
+.navlinks a:hover { color: #f0b65e; }
 
 .hero {
-  background: linear-gradient(120deg, #102f36, #21616a);
+  background: linear-gradient(120deg, #062d34, #10545c);
   color: white;
-  padding: 90px 8%;
+  padding: 75px 7%;
 }
 
-.hero-content {
-  max-width: 850px;
+.hero-inner {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.hero-logo {
+  width: 210px;
+  height: 210px;
+  border: 4px solid var(--amber);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 105px;
+  color: white;
+  letter-spacing: -12px;
+  padding-right: 12px;
+}
+
+.eyebrow {
+  color: #f0b65e;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
 }
 
 .hero h1 {
-  font-size: clamp(34px, 6vw, 55px);
+  font-size: clamp(35px, 5vw, 57px);
   line-height: 1.15;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .hero h2 {
-  color: #f2bd85;
-  font-size: 21px;
-  margin-bottom: 18px;
+  color: #f0b65e;
+  font-size: 19px;
+  margin-bottom: 16px;
 }
 
-.hero p {
-  font-size: 17px;
-  max-width: 720px;
-  margin-bottom: 25px;
-}
+.hero p { max-width: 750px; margin-bottom: 23px; }
 
 .btn {
   display: inline-block;
+  padding: 11px 20px;
+  margin: 5px 8px 5px 0;
   background: var(--amber);
   color: white;
-  padding: 12px 21px;
-  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  margin: 5px 8px 5px 0;
-}
-
-.btn:hover {
-  background: #a95d2a;
+  border-radius: 5px;
 }
 
 .btn-outline {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--amber);
+  color: #f0b65e;
 }
 
+.btn:hover { opacity: .85; }
+
 section {
-  padding: 65px 8%;
-  scroll-margin-top: 75px;
+  padding: 60px 7%;
+  scroll-margin-top: 85px;
 }
+
+.container { max-width: 1150px; margin: auto; }
 
 .section-title {
   color: var(--teal);
-  font-size: 30px;
-  margin-bottom: 12px;
+  font-size: 29px;
+  margin-bottom: 8px;
 }
 
 .section-intro {
   color: var(--muted);
+  margin-bottom: 28px;
   max-width: 800px;
-  margin-bottom: 30px;
 }
 
-.about {
-  background: white;
-}
+.about { background: white; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 20px;
 }
 
 .card {
   background: white;
   border: 1px solid var(--border);
   border-radius: 9px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,.035);
+  padding: 23px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.035);
 }
 
 .card h3 {
   color: var(--teal);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-.card p {
-  color: var(--muted);
+.card p { color: var(--muted); font-size: 14px; }
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
-.skills {
-  background: #eef3f1;
+.amber-icon { background: var(--amber); }
+
+.experience { background: white; }
+
+.timeline {
+  border-left: 3px solid var(--amber);
+  padding-left: 22px;
+  margin-left: 8px;
 }
+
+.job {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.job:before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 7px;
+  width: 13px;
+  height: 13px;
+  background: var(--amber);
+  border-radius: 50%;
+}
+
+.job h3 { color: var(--teal); }
+.job small { color: var(--muted); display: block; margin: 3px 0 7px; }
+
+.skills { background: #edf2ef; }
 
 .skill {
   display: inline-block;
   background: white;
   border: 1px solid var(--border);
-  padding: 8px 13px;
   border-radius: 20px;
+  padding: 7px 13px;
   margin: 5px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.experience {
-  background: white;
-}
-
-.job {
-  border-left: 4px solid var(--amber);
-  padding: 5px 0 22px 22px;
-  margin-bottom: 20px;
-}
-
-.job h3 {
-  color: var(--teal);
-}
-
-.job small {
-  color: var(--muted);
-}
-
-.downloads {
-  background: #eef3f1;
-}
+.downloads { background: #f2f4f1; }
 
 .download-card {
   background: white;
-  padding: 22px;
-  border-radius: 8px;
   border: 1px solid var(--border);
-  margin-bottom: 20px;
+  border-radius: 9px;
+  padding: 22px;
 }
 
 .download-card h3 {
-  color: var(--teal);
-  margin-bottom: 10px;
+  background: var(--teal);
+  color: white;
+  padding: 12px;
+  margin: -22px -22px 17px;
+  border-radius: 8px 8px 0 0;
+  font-size: 16px;
 }
 
-.download-card ul {
-  padding-left: 20px;
-}
+.download-card:nth-child(2) h3 { background: var(--amber); }
 
-.download-card li {
-  margin: 9px 0;
-}
+.download-card ul { padding-left: 20px; }
+.download-card li { margin: 10px 0; }
 
 .download-card a {
-  color: #176b79;
-  text-decoration: none;
+  color: #126474;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.download-card a:hover {
-  text-decoration: underline;
+.download-card a:hover { text-decoration: underline; }
+
+.note {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 12px;
 }
+
+.education { background: white; }
 
 .contact {
-  background: var(--dark);
+  background: var(--teal);
   color: white;
 }
 
-.contact .section-title {
-  color: white;
-}
+.contact .section-title { color: white; }
 
 .contact a {
-  color: #f2bd85;
+  color: #f0b65e;
   text-decoration: none;
 }
 
+.contact p { margin: 8px 0; }
+
 footer {
-  background: #0b2228;
-  color: #cbd5d6;
+  background: #05262c;
+  color: #cbd8d8;
   text-align: center;
   padding: 22px;
   font-size: 13px;
 }
 
-@media (max-width: 650px) {
-  header {
-    position: relative;
-  }
+@media(max-width: 700px) {
+  header { position: relative; }
+  nav { justify-content: center; }
+  .brand { justify-content: center; }
+  .navlinks { justify-content: center; gap: 12px; }
 
-  nav {
-    justify-content: center;
-  }
+  .hero { padding: 50px 7%; }
 
-  nav div:last-child {
+  .hero-inner {
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: 25px;
   }
 
-  .hero {
-    padding: 65px 7%;
+  .hero-logo {
+    width: 135px;
+    height: 135px;
+    font-size: 68px;
+    margin: auto;
   }
 
-  section {
-    padding: 48px 7%;
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  section { padding: 45px 6%; }
 }
 </style>
 </head>
@@ -275,85 +347,106 @@ footer {
 
 <header>
 <nav>
-  <div class="logo">MOHAMMED KALIF UMAR</div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#experience">Experience</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </div>
+<a class="brand" href="#home">
+  <span class="logo">MK</span>
+  <span>
+    <strong>MOHAMMED KALIF UMAR</strong>
+    <small>Professional Portfolio</small>
+  </span>
+</a>
+
+<div class="navlinks">
+  <a href="#about">About</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#experience">Experience</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</div>
 </nav>
 </header>
 
-<div class="hero">
-<div class="hero-content">
-  <h2>PROFESSIONAL PORTFOLIO</h2>
-  <h1>Mohammed Kalif Umar</h1>
-  <h2>Doctor of Veterinary Medicine | Humanitarian & Field Operations Professional</h2>
-  <p>
-    Connecting humanitarian action, livestock development, research,
-    field data management and Afaan Oromoo language technology.
-    I bring more than a decade of experience supporting field operations,
-    pastoralist communities, veterinary services and programme delivery.
-  </p>
-  <a href="#portfolio" class="btn">Explore My Portfolio</a>
-  <a href="#contact" class="btn btn-outline">Contact Me</a>
+<main>
+
+<div class="hero" id="home">
+<div class="hero-inner">
+  <div class="hero-logo">MK</div>
+  <div>
+    <div class="eyebrow">PROFESSIONAL PORTFOLIO</div>
+    <h1>Mohammed Kalif Umar</h1>
+    <h2>Doctor of Veterinary Medicine | Humanitarian & Field Operations Professional</h2>
+    <p>
+      Connecting humanitarian action, livestock development, research,
+      field data management and Afaan Oromoo language technology.
+      I bring more than a decade of experience supporting field operations,
+      pastoralist communities, veterinary services and programme delivery.
+    </p>
+    <a href="#portfolio" class="btn">Explore My Portfolio</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
 </div>
 </div>
 
 <section class="about" id="about">
+<div class="container">
 <h2 class="section-title">About Me</h2>
 <p class="section-intro">
-I am a Doctor of Veterinary Medicine with professional experience
-in livestock programme operations, veterinary service delivery,
-pastoralist field coordination, supply chain management,
-community engagement and field data collection.
+Doctor of Veterinary Medicine with professional experience in livestock
+programme operations, veterinary service delivery, pastoralist field
+coordination, supply chain management, community engagement and field data collection.
 </p>
 <p>
-My professional interests extend to humanitarian programmes,
-Monitoring, Evaluation, Accountability and Learning (MEAL),
-research support, digital data collection and artificial intelligence
-language development. I am particularly interested in using
-technology and evidence-based approaches to improve services
-for underserved and pastoralist communities.
+My professional interests extend to humanitarian programmes, Monitoring,
+Evaluation, Accountability and Learning (MEAL), research support,
+digital data collection and artificial intelligence language development.
+I am particularly interested in using technology and evidence-based
+approaches to improve services for underserved and pastoralist communities.
 </p>
+</div>
 </section>
 
 <section id="expertise">
+<div class="container">
 <h2 class="section-title">Professional Expertise</h2>
-<p class="section-intro">My work brings together field experience, technical knowledge and digital skills.</p>
+<p class="section-intro">Four connected areas of professional experience and interest.</p>
 
 <div class="grid">
 <div class="card">
+<div class="icon">◉</div>
 <h3>Humanitarian & MEAL</h3>
 <p>Field operations, programme coordination, community engagement,
 monitoring support, data quality, operational reporting and accountability.</p>
 </div>
 
 <div class="card">
+<div class="icon amber-icon">◆</div>
 <h3>Livestock & Veterinary Services</h3>
 <p>Animal health programmes, vaccination operations, disease surveillance,
 veterinary input supply chains and pastoralist livestock development.</p>
 </div>
 
 <div class="card">
+<div class="icon">▥</div>
 <h3>Research & Field Data</h3>
 <p>Digital data collection, KoboToolbox, field assessments,
 information management, data validation and research support.</p>
 </div>
 
 <div class="card">
+<div class="icon amber-icon">✧</div>
 <h3>Afaan Oromoo AI & Language Technology</h3>
 <p>Audio contribution and validation, linguistic annotation,
 language data activities and support for Afaan Oromoo digital resources.</p>
 </div>
 </div>
+</div>
 </section>
 
 <section class="experience" id="experience">
+<div class="container">
 <h2 class="section-title">Professional Experience</h2>
 <p class="section-intro">Selected professional roles and responsibilities.</p>
+
+<div class="timeline">
 
 <div class="job">
 <h3>Animal Vaccination Data Collector</h3>
@@ -390,11 +483,14 @@ language data activities and support for Afaan Oromoo digital resources.</p>
 <small>2011–2017</small>
 <p>Supported practical learning, field capacity building and animal health activities.</p>
 </div>
+
+</div>
+</div>
 </section>
 
-<section class="skills" id="skills">
+<section class="skills">
+<div class="container">
 <h2 class="section-title">Technical Skills & Languages</h2>
-
 <h3>Technical Skills</h3>
 <div>
 <span class="skill">KoboToolbox</span>
@@ -411,7 +507,7 @@ language data activities and support for Afaan Oromoo digital resources.</p>
 <span class="skill">Information Management</span>
 </div>
 
-<br><br>
+<br>
 <h3>Languages</h3>
 <div>
 <span class="skill">Afaan Oromoo — Native</span>
@@ -419,22 +515,25 @@ language data activities and support for Afaan Oromoo digital resources.</p>
 <span class="skill">Somali — Fluent</span>
 <span class="skill">English — Professional</span>
 </div>
+</div>
 </section>
 
-<section id="education">
+<section class="education">
+<div class="container">
 <h2 class="section-title">Education</h2>
 <div class="card">
 <h3>Doctor of Veterinary Medicine (DVM)</h3>
 <p>Addis Ababa University, Ethiopia | 2014</p>
 </div>
+</div>
 </section>
 
 <section class="downloads" id="portfolio">
+<div class="container">
 <h2 class="section-title">CVs & Project Portfolio</h2>
-<p class="section-intro">
-Explore and download selected professional CVs, technical tools
-and portfolio documents.
-</p>
+<p class="section-intro">Explore and download selected professional CVs, technical tools and project documents.</p>
+
+<div class="grid">
 
 <div class="download-card">
 <h3>Professional CVs</h3>
@@ -451,30 +550,45 @@ and portfolio documents.
 <li><a href="Humanitarian_MEAL/Babile_Household_Assessment_XLSForm_v2.xlsx">KoboToolbox Household Assessment XLSForm</a></li>
 <li><a href="Humanitarian_MEAL/Babile_MEAL_Data_Management_Dashboard_v2.xlsx">MEAL Data Management Dashboard</a></li>
 <li><a href="Humanitarian_MEAL/Babile_MEAL_Simulated_Assessment_Report_Concise.pdf">Simulated Assessment Report (PDF)</a></li>
-<li><a href="Humanitarian_MEAL/Kobo_XLSForm_Deployment_and_Testing_Guide.pdf">KoboToolbox Deployment & Testing Guide (PDF)</a></li>
+<li><a href="Humanitarian_MEAL/Kobo_XLSForm_Deployment_and_Testing_Guide.pdf">KoboToolbox Deployment & Testing Guide</a></li>
 </ul>
-<p><small>Note: The assessment report and example data are simulated demonstration materials, not actual programme findings.</small></p>
+<p class="note">The assessment report and example data are simulated demonstration materials, not actual programme findings.</p>
 </div>
 
 <div class="download-card">
-<h3>Afaan Oromoo AI & Linguistic Data</h3>
+<h3>Afaan Oromoo AI & Data</h3>
 <ul>
 <li><a href="Afaan_Oromoo_AI/Afaan_Oromoo_AI_Annotation_Portfolio.pdf">Afaan Oromoo AI Annotation Portfolio (PDF)</a></li>
 <li><a href="Afaan_Oromoo_AI/Afaan_Oromoo_AI_Annotation_Portfolio_25_Synthetic_Examples.xlsx">25 Synthetic Annotation Examples (Excel)</a></li>
 </ul>
-<p><small>Note: The examples are synthetic demonstrations, not real client or production datasets.</small></p>
+<p class="note">The examples are synthetic demonstrations, not real client or production datasets.</p>
+</div>
+
+</div>
 </div>
 </section>
 
 <section class="contact" id="contact">
+<div class="container">
 <h2 class="section-title">Contact Me</h2>
 <p>I welcome opportunities in humanitarian programmes, livestock development,
 MEAL, research, field data collection and Afaan Oromoo language technology.</p>
 <br>
-<p><strong>Email:</strong> <a href="mailto:mamekalif@gmail.com">mamekalif@gmail.com</a></p>
-<p><strong>WhatsApp:</strong> <a href="https://wa.me/251913830630" target="_blank">+251 913 830 630</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/mamekalif" target="_blank">github.com/mamekalif</a></p>
+<p><strong>Email:</strong>
+<a href="mailto:mamekalif@gmail.com">mamekalif@gmail.com</a></p>
+
+<p><strong>WhatsApp:</strong>
+<a href="https://wa.me/251913830630" target="_blank">+251 913 830 630</a></p>
+
+<p><strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/mohammed-umar-98bb9119b" target="_blank">Connect with me on LinkedIn</a></p>
+
+<p><strong>GitHub:</strong>
+<a href="https://github.com/mamekalif" target="_blank">github.com/mamekalif</a></p>
+</div>
 </section>
+
+</main>
 
 <footer>
 <p>© 2026 Mohammed Kalif Umar | Professional Portfolio</p>
@@ -482,4 +596,5 @@ MEAL, research, field data collection and Afaan Oromoo language technology.</p>
 </footer>
 
 </body>
-</html>
+  </html>
+  
